@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class=" bg-cyan-100">
+  <nav class="p-6 bg-white md:flex md:items-center md:justify-between md:h-17 h-auto ">
+    <div class="flex flex-row  items-center justify-between">
+      <img class="w-[100px]" class="" src="jshopyfinal.png" alt="">
+      <span class="md:hidden block">
+       <button id="menu-toggle"><img class="w-[30px]" src="menu.svg" alt=""></button> 
+      </span>
+    </div>
+    <div class="hidden md:flex justify-center gap-1.5">
+      <input type="search" name="search" id="search" class="  w-[600px]   outline-0 rounded border shadow border-gray-300" >
+      <button class="  py-2 px-4 bg-cyan-600 rounded text-center text-sm text-white transition-all shadow-md hover:shadow-lg  active:bg-cyan-700 hover:bg-cyan-700 active:scale-90">Search</button>
+    </div>
+    <ul id="menu" class=" hidden md:flex md:flex-row md:gap-2.5 z-10 md:z-auto w-full md:w-auto right-0 md:static absolute bg-white   pl-7 md:opacity-100  transition-all  ease-in duration-500  ">
+      <li class="mx-2.5 my-5  "><a class="transistion hover:text-gray-600 active:scale-90 duration-500" href="">Account</a></li>
+      <li class="my-5 mx-2.5  "><a class="transistion hover:text-gray-600 active:scale-90 duration-500" href="">Orders</a> </li>
+      <li class="my-5 mx-2.5  "><a class="transistion hover:text-gray-600 active:scale-90 duration-500" href="">Cart</a></li>
+    </ul>
+  </nav>
+
+
+
+  
+
+
+    <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 g-6 p-4" id="main-div">
+      
+
+    </main>
+   <script>
+    const toggleMenu = document.getElementById('menu-toggle')
+    const Menu = document.getElementById('menu')
+
+    toggleMenu.addEventListener('click', ()=>{
+      Menu.classList.toggle('hidden')
+      
+    })
+
+   </script>
+
+   <script src="products.js"></script>
+    
+</body>
+</html>
